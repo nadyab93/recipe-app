@@ -9,7 +9,7 @@ This is a recipe search application built using React and Vite. It allows users 
 # Features
 
 - Search Recipes: Users can search for recipes by entering an ingredient in the search bar.
-- Recipe Display: Displays a list of recipes with images, titles, calorie, diet label, and health label information.
+- Recipe Display: Displays a list of recipes with images, titles, calories, diet label, and health label information.
 - Dark Mode: Toggle between light and dark themes for better user experience.
 
 # Usage
