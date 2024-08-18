@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background: transparent;
+}
+
+.brand {
+  text-align: center;
+  font-size: 4rem;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #dfdfdf;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+ion-icon {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+button[aria-label="Search"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-result {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  background-color: #A9A9A9;
+  border-radius: 8px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.view-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #D3D3D3;
+  color: #000000;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.item-data {
+  color: #000000;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.container.initial .brand {
+  font-size: 7rem;
+}
+
+.container.initial form {
+  max-width: 800px;
+}
+
+.container.initial input {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .container.initial .brand {
+    font-size: 5rem;
+  }
+
+  .container.initial form {
+    max-width: 600px;
+  }
+
+  .container.initial input {
+    padding: 15px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-result {
+    grid-gap: 10px;
+  }
+
+  .container.initial .brand {
+    font-size: 4rem;
+  }
+
+  .container.initial form {
+    max-width: 500px;
+  }
+
+  .container.initial input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  .item img {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .view-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .item-data {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container.initial .brand {
+    font-size: 3rem;
+  }
+
+  .container.initial input {
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .view-btn {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .item-data {
+    font-size: 0.8rem;
+  }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .item {
+  background-color: #4682B4;
+}
+
+.dark-mode .brand {
+  color: #e0e0e0;
+}
+
+.dark-mode .view-btn {
+  background-color: #6CA0DC;
+  color: #e0e0e0;
+}
+
+.dark-mode .item-data {
+  color: #e0e0e0;
+}
+
